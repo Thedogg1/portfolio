@@ -62,9 +62,9 @@ h2{
 }
 
 main{
-/*background-color: white;/*change the background color of the main element*/
-     margin-top: 1em; /*adds space at the top of the main element*/
-     border-radius: 1em; /*rounds the corners of elements*/
+
+     margin-top: 1em; /*adds space at the top of the main element
+     */border-radius: 1em; /*rounds the corners of elements*/
      
      min-height:400px;
      padding: 1em;
@@ -115,8 +115,9 @@ main{
 }
 
 .myPic{
-    justify-content: space-around;
-    align-content:center;
+    justify-items:center;
+    align-items: center;
+    
     
     
 
@@ -204,5 +205,23 @@ main{
     color:white;
     gap: 200px;
     box-shadow: 0.4em 0.4em 0.4em black;
+    
+}
+form{
+    width:70%;
+    margin:auto;
+}
+.contactLabel{
+    width:250px;
+   margin:auto;
+   
+   height:20px;
+
+}
+.contactInput{
+    width:400px;
+    margin-left: 20px;
+    margin-bottom:20px;
+    height: 30px;
     
 }
