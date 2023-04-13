@@ -1,0 +1,292 @@
+
+body{
+
+    background-image: linear-gradient(white,black); /* adds a background 
+    image with a gradient that starts white and finishes black*/
+}
+
+
+#container {
+color:yellow
+}
+.accent{
+    background-color: yellow;
+    color:gray;
+}
+
+figure{
+
+    text-align:center;
+    background-color: white; /*fills in the space with white when the picture is stretched.*/
+    }
+figure img{ /*applies to images inside a figure*/
+    max-width:800px; /*stops the image from stretching out of proportion*/
+    max-height:600px;
+    width:100%;
+    height:auto;
+
+
+
+}
+main{
+    /*border-top: solid 0.3em black; /*places a top border on the main element
+    border-bottom: solid 0.3em black; /*places a border on teh bottom of the main element
+     to create a navigation section on the page
+     
+     background-color: white;/*change the background color of the main element*/
+     margin-bottom: 1em; /*adds space at the top of the main element*/
+     border-radius: 1em; /*rounds the corners of elements*/
+     background-image: linear-gradient(white, white, silver);
+     min-height:400px;
+     padding: 1em;
+}
+
+/*This was for our three column layout Begin*/
+
+
+main .row:after{ /*create a row for columns to go in to*/
+    content:"";
+    display:table; /*the type of boxes that are generated*/
+    clear:both;
+}
+ main div .column{ /*columns to go into the row. float all columns to the left*/
+    float:left;
+
+ }
+main div .left{ /*the left column*/
+    float:left;
+    width:20%;
+    padding: 0.5%;
+   
+
+}
+
+
+
+main div .right{
+   
+    padding-left: 0.5%;
+    float:right;
+    width:25%;
+    
+    
+}
+
+/*This was for our three column layout end
+-------------------*/
+
+/*Schedule table begin*/
+.schedule table{
+    border:0.1em solid black;
+    width:95%;
+    border-collapse: collapse; /*removes double borders created by adjacent cells*/
+    margin-left:2.5%;
+    background-color: white;
+}
+.schedule caption{
+    border:0.1em solid black;
+    font-size:1.5em;
+    font-weight:bold;
+   
+}
+
+/*must explicitly declare td as being part of the schedule class or else it will apply globally*/
+.schedule th, .schedule td{
+    border:0.1em solid black;
+    padding:0.5em;
+    text-align:center;
+}
+
+.schedule th{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+/*Schedule table end*/
+
+
+#enrollprice{
+    border:0.1em solid black;
+    border-collapse:collapse; /*removes double lines*/
+    }
+#enrollprice td{
+    border:0.1em solid black;
+    padding:0.5em;
+    text-align: center;
+    
+}
+
+
+
+footer{
+    
+    
+     border-radius: 1em; /*rounds the corners of elements*/
+     background-image: linear-gradient(to right, white, silver);
+     /* to right makes the gradient move from left to right*/
+     text-align:center;
+     padding: 5px;
+
+     
+}
+
+header img {
+    width:100%; /* stretches the image across the viewport*/   
+    height:auto; /*the height will change based on the size of the viewport*/
+    max-width:500px; /*stops the image from growing beyond 500px wide*/
+}
+
+nav{
+    /*global navigation*/
+     margin-bottom: 1em;
+      /*rounds the corners of elements
+     background-color: white; change the background color of the nav element*/
+     font-weight: bold;
+     text-align: center;
+}
+
+nav ul{
+/*styling for unordered list*/
+padding:0;
+margin-top:0.2em;
+margin-bottom:0.2em;
+}
+
+nav ul li{ /*descend into the list item for the nave and change the style so that bullets are not shown*/
+    list-style-type:none; /*this removes bullet points*/
+    background-color: black;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+     margin: 0.75em;
+
+
+}
+
+nav ul li a{
+    color:white; /*changes the hyperlink to white*/
+    text-decoration: none; /*removes the underline from the hyperlink*/
+
+}
+/* media queries check the size of the viewport and make changes accordingly*/
+@media screen and (max-width:641px){
+/*if the media is screen and the max width is 640 px.  
+  Always use pixels for screen media 
+  Begin mobile*/
+  
+nav ul li{
+    border-radius: 1em;
+    
+
+}
+.tablet{
+    display:none; /*removes the image until the screen is tablet or larger*/
+}
+.desktop{
+display:none;}
+
+} /*end mobile*/
+    
+
+/* begin Tablet*/
+@media screen and (min-width:641px)
+/*Changes to tablet one pixel after mobile max width. */
+{
+
+  
+nav ul li{
+    border-radius: 1em;
+    display: inline-block; /*displays the list horizontally
+    and allows them to stretch.*/
+    box-shadow: 0.5em 0.5em 0.5em black; /*creates a 3d effect*/
+
+}
+.desktop{
+    display:none;
+}
+
+nav ul li{
+  padding: 0.7em;
+  box-shadow: 0.5em 0.5em 0.5em black; 
+  margin:0.25em;
+    border-radius: 1em;
+    border-top: solid 0.2em black;
+    border-bottom: solid 0.2em black;
+    display: inline-block; /*displays the list horizontally
+    and allows them to stretch.*/
+    min-width: 13%;
+}
+
+figure{
+
+    box-shadow: 0.5em 0.5em 0.5em black; /*creates a 3d effect*/
+}
+
+main{
+    box-shadow: 0.5em 0.5em 0.5em black; /*creates a 3d effect*/
+}
+
+main div .center{
+   
+    width: 66%;
+    border-right: 0.3em solid black;
+   
+    
+}
+
+main div .right{
+    /*width:75%;*/
+    float:right;
+    padding: 10px;
+    /*border-right: 0.3em solid black;*/
+}
+footer{
+    box-shadow:0.5em 0.5em 0.5em black;
+}
+} /*end Tablet*/
+
+/*begin desktop*/
+@media screen and (min-width:960px)
+
+
+
+{
+    header{
+        background-image: linear-gradient(to right, white,black,black,black);
+        box-shadow:0.5em 0.5em 0.5em black;
+    }
+    header img{
+        width:auto;
+        height: 5em;
+      
+    }
+    .desktop{
+        display:block;
+    }
+nav{
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    float:right; /*nav section float to the right*/
+    margin-top: -5.2em; /*this moves the nav element above its usual position*/
+   background-color:black;
+    width:58%;
+    border-top: solid 0.2em black;
+    border-bottom: solid 0.2em black;
+    /*max-width:50%;*/
+}
+  
+nav ul li{
+    border-radius: 1em;
+    display: inline-block; /*displays the list horizontally
+    and allows them to stretch.*/  
+       
+}
+main div .center{
+    width:49%;
+    border-right: 0.3em solid black;
+    border-left: 0.3em solid black;
+
+} /*end desktop*/
+}
