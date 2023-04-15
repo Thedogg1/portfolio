@@ -19,7 +19,7 @@ body{
     width: 95%;
     border: 1px solid black;
     background-image: linear-gradient(silver,rgb(41, 41, 85)); /* adds a background*/ 
-    
+   
     margin:auto;
     font-family: rubik, Arial, Helvetica, sans-serif;
     box-shadow: 0.5em 0.5em 0.5em black; /*creates a 3d effect*/
@@ -56,8 +56,8 @@ h1{
 h2{
     font-size: 2em;
     font-family: rubik;
-    color:gold;
-    text-shadow: 0 0 3px #FF0000;
+    color:black;
+    text-shadow: 0 0 3px gold;
     
 }
 
@@ -106,22 +106,24 @@ main{
 
 .aboutme{
   
-    width: 55%;
-    padding: 10px;
-    margin-right:2%;
+    width: 65%;
+    padding-left:25px;
+    /*margin-right:2%;*/
     justify-content: center;
     align-content:space-center;
+    /*margin:auto;*/
+    
 
 }
 
-.myPic{
+/*.myPic{
     justify-items:center;
     align-items: center;
     
     
     
 
-}
+}*/
 .myPic img{
     width:70%;
     /*height:auto;*/
@@ -224,4 +226,7 @@ form{
     margin-bottom:20px;
     height: 30px;
     
+}
+footer{
+    height: 50px;
 }
