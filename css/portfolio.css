@@ -19,7 +19,7 @@ body{
     width: 95%;
     border: 1px solid black;
     background-image: linear-gradient(silver,rgb(41, 41, 85)); /* adds a background*/ 
-   
+   min-height: 600px;
     margin:auto;
     font-family: rubik, Arial, Helvetica, sans-serif;
     box-shadow: 0.5em 0.5em 0.5em black; /*creates a 3d effect*/
@@ -40,6 +40,9 @@ nav a{
     color:white;
 }
 
+a:hover{
+    color: gold;
+}
 
 
         
@@ -66,7 +69,7 @@ main{
      margin-top: 1em; /*adds space at the top of the main element
      */border-radius: 1em; /*rounds the corners of elements*/
      
-     min-height:400px;
+     min-height:600px;
      padding: 1em;
 }
 
@@ -212,6 +215,7 @@ main{
 form{
     width:70%;
     margin:auto;
+    font-size: medium;
 }
 .contactLabel{
     width:250px;
@@ -225,8 +229,11 @@ form{
     margin-left: 20px;
     margin-bottom:20px;
     height: 30px;
+    font-size: medium;
     
 }
 footer{
-    height: 50px;
+    height: 80px;
+    background-color: rgb(219, 215, 230);
+    padding: 10px;
 }
